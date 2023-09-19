@@ -28,8 +28,8 @@ public class Main {
             while ((line = bufferedReader.readLine()) != null) {
                 String[] str = line.split("[,.\\s]+");
                 for (int i = 0; i < str.length; i++) {
-                    char simb1 = str[i].charAt(0);
-                    if ((str[i].length() == num) && ("БВГДЖЗЙКЛМНПРСТФХЦЧШЩбвгджзйклмнпрстфхцчшщ".contains(String.valueOf(simb1)))) {
+                    char simv = str[i].charAt(0);
+                    if ((str[i].length() == num) && ("БВГДЖЗЙКЛМНПРСТФХЦЧШЩбвгджзйклмнпрстфхцчшщ".contains(String.valueOf(simv)))) {
                         str[i] = "";
                     }
                     System.out.println(str[i]);
